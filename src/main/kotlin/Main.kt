@@ -6,14 +6,14 @@ fun main(args: Array<String>) {
     println(getMiddleElement(list2))
 }
 
-fun showMiddleElement(list: Collection<Any>): String {
+fun showMiddleElement(list: Collection<Any>) {
     if (list.isEmpty()){
         println("Empty list!")
     } else if (list.size % 2 == 0) {
         println("List size is even, there's no exact 'middle' element")
     }else {
         var middle = list.size / 2
-        println("The middle element is: " + list[middle])
+        println("The middle element is: " + list.elementAt(middle))
     }
 }
 
